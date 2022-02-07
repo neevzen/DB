@@ -1,0 +1,18 @@
+CREATE TABLE Staff
+(
+    Talon INT,
+    Status VARCHAR(255) NULL,
+    Who VARCHAR(255) NULL
+);
+
+
+INSERT Staff(Talon, Status, Who);
+VALUES ('131', 'OK', 'Nedelkin');
+
+insert_talon_query = """
+INSERT INTO Staff (Talon)
+VALUES ('123')
+"""
+with connection.cursor() as cursor:
+    cursor.execute(insert_movies_query)
+    connection.commit()
