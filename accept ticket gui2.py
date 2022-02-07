@@ -71,6 +71,10 @@ def clicked():
         mb.showinfo('Ticket', 'Принят талон: ' + str(arrrr[0][0]))
 
 connection.close()
+####################################
+
+
+###################################
 def clicked1():
     connection.reconnect()
     with connection.cursor() as cursor:
